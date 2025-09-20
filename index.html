@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аптека</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <section>
+                <form id="addItemForm" class="text-usual">
+                    <!-- назва -->
+                    <div class="form-group">
+                        <label for="name">Назва</label>
+                        <input type="text" id="name" name="name" required placeholder="Парацетамол" class="text-usual"/>
+                    </div>
+
+                    <!--Основна дія -->
+                    <div class="form-group">
+                        <label for="action">Основна дія</label>
+                        <input type="text" id="action" name="action" required placeholder="Від головної болі" class="text-usual"/>
+                    </div>
+
+                    <!--Назва виробника -->
+                    <div class="form-group">
+                        <label for="producer">Назва виробника</label>
+                        <input type="text" id="producer" name="producer" required placeholder="Дарниця" class="text-usual"/>
+                    </div>
+
+                    <!--Країна-->
+                    <div class="form-group">
+                        <label for="country">Країна</label>
+                        <input type="text" id="country" name="country" required placeholder="Україна" class="text-usual"/>
+                    </div>
+
+                    <!--Ціна-->
+                    <div class="form-group">
+                        <label for="price">Ціна</label>
+                        <input type="text" id="price" name="price" required placeholder="150" class="text-usual"/>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="buttons-group">
+                        <button type="reset" class="resetBtn">Сксувати</button>
+                        <button type="submit" class="addBtn text-usual">Додати</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="right-section">
+                <div class="section-panel">
+                    <p class="title-text">Доступні ліки в аптеці </p>
+                    <button class="seeBtn">
+                        <img src="/images/pig.svg" alt="See the cheapest option">
+                    </button>
+                </div>
+
+                <div class="box-section">
+                    <div class="medicines-list top-block">
+                        <p class="title-text default">Опаньки, а тут пусто...</p>
+                    </div>
+
+                    <div class="design-items bottom-block ">
+                        <img src="/images/herb1.png" alt="">
+                        <img src="/images/herb2.png" alt="">
+                        <img src="/images/herb3.png" alt="">
+                        <img src="/images/herb4.png" alt="">
+                        <img src="/images/herb5.png" alt="">
+                        <img src="/images/herb6.png" alt="">
+                        <img src="/images/herb7.png" alt="">
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+
+    </main>
+</body>
+</html>
