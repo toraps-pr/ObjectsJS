@@ -107,12 +107,20 @@ main{
     border: solid;
     border-width: 2px;
     border-color: #fff;
-    padding: 12px;
+    padding: 20px;
     border-radius: 20px;
     margin-top: 12px;
 
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.list-item{
+    background-color: #E95D8E;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 8px;
 }
 
 .default{
@@ -147,7 +155,41 @@ main{
   flex-direction: column;
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 
+.modal {
+    width: 400px;
+    height: 400px;
+    background: #E95D8E;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.closeBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.details{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 
 
@@ -225,6 +267,11 @@ main{
 
     .seeBtn{
         padding: 4px 20px;
+    }
+
+    .modal {
+        width: 260px;
+        height: 260px;
     }
 
 }
